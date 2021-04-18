@@ -2,7 +2,7 @@ from mega import Mega
 import requests # For making web requests
 from multiprocessing import Pool # Multi-Threading
 from multiprocessing import freeze_support # Windows Support
-accounts = [line.rstrip('\n') for line in open("combo.txt", 'r')]
+accounts = [line.rstrip('\n') for line in open("/content/MegaPy/combo.txt", 'r')]
 mega = Mega()
 
 def checkAccount(account):
